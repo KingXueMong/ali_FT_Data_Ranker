@@ -1,0 +1,42 @@
+[2023-11-22 21:51:10,558] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:11,193] [WARNING] [runner.py:203:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2023-11-22 21:51:11,193] [INFO] [runner.py:570:main] cmd = /home/kingxue/anaconda3/envs/pytorch/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgNywgOCwgOV19 --master_addr=127.0.0.1 --master_port=50000 --enable_each_rank_log=None train.py --model_name_or_path ./data/models/falcon-rw-1b --tokenizer ./data/models/falcon-rw-1b --data_path ./data/proc_data/proc_data_en.jsonl --output_dir ./data/models/falcon-rw-1b_output --per_device_train_batch_size 1 --gradient_accumulation_steps 25 --lang en --bf16 True --gradient_checkpointing_enable True --num_train_epochs 3 --model_max_length 1024 --learning_rate 2.5e-5 --weight_decay 0 --warmup_ratio 0.03 --evaluation_strategy no --save_strategy no --save_steps -1 --save_total_limit 999 --lr_scheduler_type cosine --logging_steps 1 --tf32 True --deepspeed /home/kingxue/PycharmProjects/ali_FT_Data_Ranker/competition_kit/lm-training/train_scripts/deepspeed_configs/ds_config_stage3.json
+[2023-11-22 21:51:13,005] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:13,640] [INFO] [launch.py:145:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}
+[2023-11-22 21:51:13,640] [INFO] [launch.py:151:main] nnodes=1, num_local_procs=10, node_rank=0
+[2023-11-22 21:51:13,640] [INFO] [launch.py:162:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]})
+[2023-11-22 21:51:13,640] [INFO] [launch.py:163:main] dist_world_size=10
+[2023-11-22 21:51:13,640] [INFO] [launch.py:165:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7,8,9
+[2023-11-22 21:51:17,439] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,492] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,562] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:17,617] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:17,629] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,650] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,723] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,744] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,782] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:17,814] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,817] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:17,827] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,838] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,870] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-22 21:51:17,880] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:17,901] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:17,982] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:17,983] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:17,997] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:18,025] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-11-22 21:51:18,025] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+Loading model from ./data/models/falcon-rw-1b
+[2023-11-22 21:51:19,646] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994317
+[2023-11-22 21:51:19,719] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994318
+[2023-11-22 21:51:19,738] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994319
+[2023-11-22 21:51:19,756] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994320
+[2023-11-22 21:51:19,766] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994321
+[2023-11-22 21:51:19,767] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994322
+[2023-11-22 21:51:19,776] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994323
+[2023-11-22 21:51:19,786] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994324
+[2023-11-22 21:51:19,796] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994325
+[2023-11-22 21:51:19,806] [INFO] [launch.py:315:sigkill_handler] Killing subprocess 994326
+[2023-11-22 21:51:19,820] [ERROR] [launch.py:321:sigkill_handler] ['/home/kingxue/anaconda3/envs/pytorch/bin/python', '-u', 'train.py', '--local_rank=9', '--model_name_or_path', './data/models/falcon-rw-1b', '--tokenizer', './data/models/falcon-rw-1b', '--data_path', './data/proc_data/proc_data_en.jsonl', '--output_dir', './data/models/falcon-rw-1b_output', '--per_device_train_batch_size', '1', '--gradient_accumulation_steps', '25', '--lang', 'en', '--bf16', 'True', '--gradient_checkpointing_enable', 'True', '--num_train_epochs', '3', '--model_max_length', '1024', '--learning_rate', '2.5e-5', '--weight_decay', '0', '--warmup_ratio', '0.03', '--evaluation_strategy', 'no', '--save_strategy', 'no', '--save_steps', '-1', '--save_total_limit', '999', '--lr_scheduler_type', 'cosine', '--logging_steps', '1', '--tf32', 'True', '--deepspeed', '/home/kingxue/PycharmProjects/ali_FT_Data_Ranker/competition_kit/lm-training/train_scripts/deepspeed_configs/ds_config_stage3.json'] exits with return code = 1

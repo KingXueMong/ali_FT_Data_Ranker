@@ -1,0 +1,96 @@
+2023-11-22 17:29:19.258 | INFO     | data_juicer.config.config:config_backup:442 - Back up the input config file [/media/kingxue/data/PycharmProjects/ali_FT_Data_Ranker/competition_kit/data-juicer/configs/demo/analyser.yaml] into the work_dir [./outputs/demo-analyser]
+2023-11-22 17:29:19.275 | INFO     | data_juicer.config.config:display_config:463 - Configuration table: 
+╒════════════════════════╤═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╕
+│ key                    │ values                                                                                                                        │
+╞════════════════════════╪═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╡
+│ config                 │ [Path_fr(configs/demo/analyser.yaml, cwd=/media/kingxue/data/PycharmProjects/ali_FT_Data_Ranker/competition_kit/data-juicer)] │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ hpo_config             │ None                                                                                                                          │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ project_name           │ 'demo-analyser'                                                                                                               │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ executor_type          │ 'default'                                                                                                                     │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ dataset_path           │ './demos/data/demo-dataset.jsonl'                                                                                             │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ export_path            │ './outputs/demo-analyser/demo-analyser-result.jsonl'                                                                          │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ export_shard_size      │ 0                                                                                                                             │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ export_in_parallel     │ False                                                                                                                         │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ np                     │ 4                                                                                                                             │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ text_keys              │ 'text'                                                                                                                        │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ image_key              │ 'images'                                                                                                                      │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ image_special_token    │ '<__dj__image>'                                                                                                               │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ eoc_special_token      │ '<|__dj__eoc|>'                                                                                                               │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ suffixes               │ []                                                                                                                            │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ use_cache              │ True                                                                                                                          │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ ds_cache_dir           │ PosixPath('/home/kingxue/.cache/huggingface/datasets')                                                                        │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ cache_compress         │ None                                                                                                                          │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ use_checkpoint         │ False                                                                                                                         │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ temp_dir               │ None                                                                                                                          │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ open_tracer            │ False                                                                                                                         │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ op_list_to_trace       │ []                                                                                                                            │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ trace_num              │ 10                                                                                                                            │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ op_fusion              │ False                                                                                                                         │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ process                │ [{'language_id_score_filter': {'image_key': 'images',                                                                         │
+│                        │                                'lang': 'en',                                                                                  │
+│                        │                                'min_score': 0.8,                                                                              │
+│                        │                                'text_key': 'text'}},                                                                          │
+│                        │  {'perplexity_filter': {'image_key': 'images',                                                                                │
+│                        │                         'lang': 'en',                                                                                         │
+│                        │                         'max_ppl': 1500,                                                                                      │
+│                        │                         'text_key': 'text'}}]                                                                                 │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ save_stats_in_one_file │ False                                                                                                                         │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ ray_address            │ 'auto'                                                                                                                        │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ work_dir               │ './outputs/demo-analyser'                                                                                                     │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ timestamp              │ '20231122172918'                                                                                                              │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ dataset_dir            │ '/media/kingxue/data/PycharmProjects/ali_FT_Data_Ranker/competition_kit/data-juicer/demos/data'                               │
+├────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ add_suffix             │ False                                                                                                                         │
+╘════════════════════════╧═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╛
+2023-11-22 17:29:19.277 | INFO     | data_juicer.core.analyser:__init__:38 - Using cache compression method: [None]
+2023-11-22 17:29:19.277 | INFO     | data_juicer.core.analyser:__init__:43 - Setting up data formatter...
+2023-11-22 17:29:19.278 | INFO     | data_juicer.core.analyser:__init__:52 - Preparing exporter...
+2023-11-22 17:29:19.278 | INFO     | data_juicer.core.analyser:run:73 - Loading dataset from data formatter...
+2023-11-22 17:29:20.468 | INFO     | datasets.load:load_dataset:1791 - Downloading and preparing dataset json/default to /home/kingxue/.cache/huggingface/datasets/json/default-f740f35192301172/0.0.0/fe5dd6ea2639a6df622901539cb550cf8797e5a6b2dd7af1cf934bed8e233e6e...
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|##########| 1/1 [00:00<00:00, 1825.20it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|##########| 1/1 [00:00<00:00, 577.65it/s]
+2023-11-22 17:29:20.476 | INFO     | logging:handle:968 - Setting num_proc from 4 back to 1 for the jsonl split to disable multiprocessing as it only contains one shard.
+Generating jsonl split: 0 examples [00:00, ? examples/s]                                                        2023-11-22 17:29:20.487 | INFO     | datasets.load:load_dataset:1791 - Dataset json downloaded and prepared to /home/kingxue/.cache/huggingface/datasets/json/default-f740f35192301172/0.0.0/fe5dd6ea2639a6df622901539cb550cf8797e5a6b2dd7af1cf934bed8e233e6e. Subsequent calls will reuse this data.
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:00<00:00, 502.55it/s]
+2023-11-22 17:29:20.493 | INFO     | data_juicer.format.formatter:unify_format:178 - Unifying the input dataset formats...
+2023-11-22 17:29:20.494 | INFO     | data_juicer.format.formatter:unify_format:193 - There are 6 sample(s) in the original dataset.
+Filter (num_proc=4):   0%|          | 0/6 [00:00<?, ? examples/s]                                                                 2023-11-22 17:29:20.787 | INFO     | data_juicer.format.formatter:unify_format:207 - 6 samples left after filtering empty text.
+2023-11-22 17:29:20.787 | INFO     | data_juicer.format.mixture_formatter:load_dataset:136 - sampled 6 from 6
+2023-11-22 17:29:20.790 | INFO     | data_juicer.format.mixture_formatter:load_dataset:142 - There are 6 in final dataset
+2023-11-22 17:29:20.790 | INFO     | data_juicer.core.analyser:run:79 - Preparing process operators...
+2023-11-22 17:29:20.790 | INFO     | data_juicer.utils.model_utils:prepare_fasttext_model:87 - Loading fasttext language identification model...
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+2023-11-22 17:29:20.889 | INFO     | data_juicer.utils.model_utils:check_model:59 - Model [lid.176.bin] not found . Downloading...
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+2023-11-22 17:29:28.613 | INFO     | data_juicer.utils.model_utils:prepare_sentencepiece_model:104 - Loading sentencepiece model...
+2023-11-22 17:29:28.671 | INFO     | data_juicer.utils.model_utils:prepare_kenlm_model:122 - Loading kenlm language model...
+2023-11-22 17:29:28.672 | INFO     | data_juicer.utils.model_utils:check_model:59 - Model [en.arpa.bin] not found . Downloading...
+2023-11-22 17:31:55.556 | ERROR    | data_juicer.utils.model_utils:check_model:71 - Downloading model [en.arpa.bin] error. Please retry later or download it into /home/kingxue/.cache/data_juicer/models manually from https://dail-wlcb.oss-cn-wulanchabu.aliyuncs.com/data_juicer/models/en.arpa.bin or https://huggingface.co/edugp/kenlm/resolve/main/wikipedia/en.arpa.bin 

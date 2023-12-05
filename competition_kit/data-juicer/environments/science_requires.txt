@@ -1,0 +1,14 @@
+fasttext-wheel
+kenlm
+sentencepiece
+scipy
+ftfy
+simhash-py
+selectolax
+nlpaug
+nlpcda
+nltk
+transformers
+opencc==1.1.6
+imagededup
+torch

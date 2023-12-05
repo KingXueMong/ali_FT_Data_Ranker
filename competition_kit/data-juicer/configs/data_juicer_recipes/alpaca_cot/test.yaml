@@ -1,0 +1,12 @@
+# global parameters
+project_name: 'Data-Juicer-recipes-alpaca-cot-en'
+dataset_path: '../data/proc_data/proc_data_en.jsonl'  # path to your dataset directory or file
+export_path: '../data/proc_data/proc_data_en.jsonl'
+
+np: 72  # number of subprocess to process your dataset
+open_tracer: true
+
+# process schedule
+# a list of several process operators with their arguments
+process:
+  - balanced_selector:

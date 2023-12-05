@@ -1,0 +1,21 @@
+2023-11-22 17:01:36.612 | ERROR    | data_juicer.config.config:init_setup_from_cfg:320 - Input dataset_path [raw_data/raw_data_en.jsonl] is invalid. Please check and retry.
+2023-11-22 17:01:36.613 | ERROR    | __main__:<module>:19 - An error has been caught in function '<module>', process 'MainProcess' (422336), thread 'MainThread' (140479109455872):
+Traceback (most recent call last):
+
+> File "/media/kingxue/data/PycharmProjects/ali_FT_Data_Ranker/competition_kit/data-juicer/tools/process_data.py", line 19, in <module>
+    main()
+    └ <function main at 0x7fc3d69e7b50>
+
+  File "/media/kingxue/data/PycharmProjects/ali_FT_Data_Ranker/competition_kit/data-juicer/tools/process_data.py", line 9, in main
+    cfg = init_configs()
+          └ <function init_configs at 0x7fc3d5ebc550>
+
+  File "/media/kingxue/data/PycharmProjects/ali_FT_Data_Ranker/competition_kit/data-juicer/data_juicer/config/config.py", line 275, in init_configs
+    cfg = init_setup_from_cfg(cfg)
+          │                   └ Namespace(config=[Path_fr(configs/data_juicer_recipes/alpaca_cot/alpaca-cot-en-refine.yaml, cwd=/media/kingxue/data/PycharmPr...
+          └ <function init_setup_from_cfg at 0x7fc3d5ebcd30>
+
+  File "/media/kingxue/data/PycharmProjects/ali_FT_Data_Ranker/competition_kit/data-juicer/data_juicer/config/config.py", line 322, in init_setup_from_cfg
+    raise ValueError(f'Input dataset_path [{cfg.dataset_path}] is '
+
+ValueError: Input dataset_path [raw_data/raw_data_en.jsonl] is invalid. Please check and retry.
